@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1c">
+  <meta name="description" content="Missão IA - Sua inteligência artificial.">
+  <title>Missão IA | Assistente Inteligente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="logo">✦ MISSÃO <span>IA</span></div>
+
+      <button class="new-chat" id="newChat">
+        + Nova conversa
+      </button>
+
+      <div class="sidebar-info">
+        <span class="online-dot"></span>
+        Sistema operacional
+      </div>
+
+      <div class="sidebar-footer">
+        MISSÃO IA © 2026
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>Missão IA</h2>
+          <p>Inteligência artificial avançada</p>
+        </div>
+
+        <div class="status">
+          <span class="online-dot"></span>
+          ONLINE
+        </div>
+      </header>
+
+      <section class="chat-area" id="chat">
+        <div class="welcome" id="welcome">
+          <div class="brain">✧</div>
+          <h1>O futuro começa aqui.</h1>
+          <p>Olá! Eu sou a Missão IA. Como posso ajudar você?</p>
+
+          <div class="suggestions">
+            <button data-prompt="Explique como funciona a inteligência artificial.">
+              🧠 Aprender sobre IA
+            </button>
+            <button data-prompt="Me ajude a criar um site.">
+              💻 Criar um site
+            </button>
+            <button data-prompt="Crie um plano de estudos para mim.">
+              📚 Plano de estudos
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="composer">
+        <form id="chatForm">
+          <textarea
+            id="message"
+            placeholder="Pergunte qualquer coisa à Missão IA..."
+            rows="1"
+            maxlength="4000"
+            required
+          ></textarea>
+
+          <button type="submit" id="sendButton">
+            ➤
+          </button>
+        </form>
+
+        <p class="disclaimer">
+          A Missão IA pode cometer erros. Confira informações importantes.
+        </p>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
